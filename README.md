@@ -25,45 +25,45 @@
 
 因为 Claude 可能会根据系统提示词或训练数据回答错误的版本。例如下图中，Claude Sonnet 4.5 声称自己是 Claude Sonnet 3.5：
 
-![Claude Sonnet 4.5 错误地声称自己是 Claude Sonnet 3.5](Claude%20Sonnet4.5回答自己是Claude%20Sonnet3.5的情况.png)
+![Claude Sonnet 4.5 错误地声称自己是 Claude Sonnet 3.5](images/Claude%20Sonnet4.5回答自己是Claude%20Sonnet3.5的情况.png)
 
 ## 检测结果示例
 
 ### Claude Sonnet 3.5
 
-![Claude Sonnet 3.5](claudesonnet3.5.png)
+![Claude Sonnet 3.5](images/claudesonnet3.5.png)
 
 ### Claude Sonnet 3.7
 
-![Claude Sonnet 3.7](claudesonnet3.7.png)
+![Claude Sonnet 3.7](images/claudesonnet3.7.png)
 
 ### Claude Sonnet 3.7 (Think)
 
-![Claude Sonnet 3.7 Think](claudesonnet3.7tthink.png)
+![Claude Sonnet 3.7 Think](images/claudesonnet3.7tthink.png)
 
 ### Claude Sonnet 4.0
 
-![Claude Sonnet 4.0](claudesonnet4.0.png)
+![Claude Sonnet 4.0](images/claudesonnet4.0.png)
 
 ### Claude Sonnet 4.0 (Think)
 
-![Claude Sonnet 4.0 Think](claudesonnet4.0think.png)
+![Claude Sonnet 4.0 Think](images/claudesonnet4.0think.png)
 
 ### Claude Sonnet 4.5
 
-![Claude Sonnet 4.5](claudesonnet4.5.png)
+![Claude Sonnet 4.5](images/claudesonnet4.5.png)
 
 ### Claude Sonnet 4.5 (Think)
 
-![Claude Sonnet 4.5 Think](claudesonnet4.5think.png)
+![Claude Sonnet 4.5 Think](images/claudesonnet4.5think.png)
 
 ### Claude Opus 4.5
 
-![Claude Opus 4.5](claudesopus4.5.png)
+![Claude Opus 4.5](images/claudesopus4.5.png)
 
 ### Claude Opus 4.5 (Think)
 
-![Claude Opus 4.5 Think](claudesopus4.5think.png)
+![Claude Opus 4.5 Think](images/claudesopus4.5think.png)
 
 ## 安装
 
