@@ -73,17 +73,52 @@ def get_headers(api_key: str) -> dict:
 
 def build_body(message: str, config: dict, with_thinking: bool = True) -> dict:
     """
-    构建请求体（无系统提示词，用于检测真实模型）
+    构建请求体（模拟 Claude Code 请求格式）
     """
     body = {
         "model": config.get("model", "claude-sonnet-4-5-20250929"),
         "messages": [
             {
                 "role": "user",
-                "content": message
+                "content": [
+                    {
+                        "type": "text",
+                        "text": "null"
+                    },
+                    {
+                        "type": "text",
+                        "text": "null"
+                    },
+                    {
+                        "type": "text",
+                        "text": message,
+                        "cache_control": {
+                            "type": "ephemeral"
+                        }
+                    }
+                ]
             }
         ],
-        "max_tokens": config.get("max_tokens", 16000),
+        "system": [
+            {
+                "type": "text",
+                "text": "You are Claude Code, Anthropic's official CLI for Claude.",
+                "cache_control": {
+                    "type": "ephemeral"
+                }
+            },
+            {
+                "type": "text",
+                "text": "null",
+                "cache_control": {
+                    "type": "ephemeral"
+                }
+            }
+        ],
+        "metadata": {
+            "user_id": "user_82a10c807646e5141d2ffcbf5c6d439ee4cfd99d1903617b7b69e3a5c03b1dbf_account__session_74673a26-ea49-47f4-a8ed-27f9248f231f"
+        },
+        "max_tokens": config.get("max_tokens", 32000),
         "stream": True
     }
 
@@ -91,7 +126,7 @@ def build_body(message: str, config: dict, with_thinking: bool = True) -> dict:
     if with_thinking:
         body["thinking"] = {
             "type": "enabled",
-            "budget_tokens": config.get("thinking_budget", 10000)
+            "budget_tokens": config.get("thinking_budget", 31999)
         }
 
     return body
