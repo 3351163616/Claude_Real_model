@@ -35,3 +35,6 @@ ddd.ps1
 demo.json
 demo2.json
 demo3.json
+
+# Windows reserved names
+nul
